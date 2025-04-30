@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PluviSeg - Proteção Contra Enchentes e Inundações</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(#eef6fb, #d9edf7);
+      color: #003366;
+      text-align: center;
+    }
+    header {
+      padding: 2rem;
+      background-color: #003366;
+      color: white;
+    }
+    section {
+      padding: 2rem;
+    }
+    h1, h2 {
+      margin: 1rem 0;
+    }
+    form {
+      max-width: 600px;
+      margin: auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    }
+    label {
+      display: block;
+      margin-top: 1rem;
+      text-align: left;
+    }
+    input[type="text"], input[type="email"], textarea {
+      width: 100%;
+      padding: 0.6rem;
+      margin-top: 0.3rem;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+    button {
+      margin-top: 1.5rem;
+      padding: 0.8rem 1.5rem;
+      background-color: #003366;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    .question {
+      text-align: left;
+      margin-top: 1.5rem;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Você já perdeu tudo com uma enchente ou inundação?</h1>
+  <p>Sua experiência pode mudar isso.</p>
+</header>
+
+<section>
+  <p>Queremos conhecer sua experiência para criar uma nova forma de proteção contra enchentes: sem demora, sem surpresas.</p>
+
+  <form name="enchente-form" method="POST" data-netlify="true">
+    <input type="hidden" name="form-name" value="enchente-form" />
+
+    <div class="question">
+      <label>Sua loja ou negócio já sofreu com enchentes ou inundação?</label>
+      <label><input type="radio" name="sofreu-enchente" value="Sim"> Sim</label>
+      <label><input type="radio" name="sofreu-enchente" value="Não"> Não</label>
+    </div>
+
+    <div class="question">
+      <label>Você tinha seguro na época?</label>
+      <label><input type="radio" name="tinha-seguro" value="Sim"> Sim</label>
+      <label><input type="radio" name="tinha-seguro" value="Não"> Não</label>
+    </div>
+
+    <div class="question">
+      <label>O seguro cobriu todo o prejuízo?</label>
+      <label><input type="radio" name="cobertura" value="Sim, tudo"> Sim, tudo</label>
+      <label><input type="radio" name="cobertura" value="Parcialmente"> Parcialmente</label>
+      <label><input type="radio" name="cobertura" value="Não cobriu nada"> Não cobriu nada</label>
+    </div>
+
+    <div class="question">
+      <label>Quanto você gastou do próprio bolso para reparar os danos?</label>
+      <label><input type="radio" name="gastos" value="Nada"> Nada</label>
+      <label><input type="radio" name="gastos" value="Até R$ 10.000"> Até R$ 10.000</label>
+      <label><input type="radio" name="gastos" value="R$ 10.000 a R$ 50.000"> R$ 10.000 a R$ 50.000</label>
+      <label><input type="radio" name="gastos" value="Mais de R$ 50.000"> Mais de R$ 50.000</label>
+    </div>
+
+    <div class="question">
+      <label>Depois do sinistro, o que aconteceu com o seu seguro?</label>
+      <label><input type="radio" name="pos-sinistro" value="Aumentou o preço"> Aumentou o preço</label>
+      <label><input type="radio" name="pos-sinistro" value="Continuou igual"> Continuou igual</label>
+      <label><input type="radio" name="pos-sinistro" value="Foi cancelado"> Foi cancelado</label>
+      <label><input type="radio" name="pos-sinistro" value="Não renovei"> Não renovei</label>
+    </div>
+
+    <div class="question">
+      <label>De 0 a 10, quanta confiança você tem hoje em seguros tradicionais?</label>
+      <label><input type="radio" name="confianca" value="0-3"> 0-3 (muito baixa)</label>
+      <label><input type="radio" name="confianca" value="4-6"> 4-6 (baixa)</label>
+      <label><input type="radio" name="confianca" value="7-8"> 7-8 (boa)</label>
+      <label><input type="radio" name="confianca" value="9-10"> 9-10 (muito alta)</label>
+    </div>
+
+    <div class="question">
+      <label>Você sabia que para receber o prêmio do seguro a seguradora precisa fazer uma perícia dos danos antes do pagamento?</label>
+      <label><input type="radio" name="interesse" value="Sim"> Sim</label>
+      <label><input type="radio" name="interesse" value="Não"> Não</label>
+    </div>
+   
+    <div class="question">
+        <label>Você recuperaria a confiança em seguros se o pagamento fosse feito mais rápido?</label>
+        <label><input type="radio" name="interesse" value="Sim"> Sim</label>
+        <label><input type="radio" name="interesse" value="Talvez"> Talvez</label>
+        <label><input type="radio" name="interesse" value="Não"> Não</label>
+      </div>
+  
+    <div class="question">
+        <label>Você teria interesse em conhecer uma nova solução de proteção contra enchentes e inundações?</label>
+        <label><input type="radio" name="interesse" value="Sim"> Sim</label>
+        <label><input type="radio" name="interesse" value="Talvez"> Talvez</label>
+        <label><input type="radio" name="interesse" value="Não"> Não</label>
+      </div>
+
+    <div class="question">
+      <label>Quer receber novidades? Deixe seu WhatsApp ou e-mail.</label>
+      <input type="text" name="contato" />
+    </div>
+
+    <button type="submit">Enviar</button>
+  </form>
+</section>
+
+<section>
+    <p style="text-align: justify;">Ao preencher o formulário, você concorda em fornecer os seus dados pessoais, que serão utilizados para fins específicos, como análise de pesquisa, envio de newsletter e contato para oferta de produto. Garantimos que seus dados serão protegidos, de acordo com a LGPD, e não serão compartilhados com terceiros sem o seu consentimento. Você pode exercer seus direitos, como acesso, correção, exclusão, oposição e portabilidade, entre outros, conforme previsto na LGPD, enviando e-mail para contato@pluviseg.com.br.</p>
+
+<footer>
+    © 2025 PluviSeg - Todos os direitos reservados
+</footer>
+
+</body>
+</html>
