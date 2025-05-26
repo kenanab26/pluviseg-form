@@ -39,20 +39,23 @@
 
     /* ————— Subtítulo/resumo ————— */
     p.intro {
-      font-size: clamp(14px, 1.2vw, 16px);
-      line-height: 1.6;
-      color: #555;
-      text-align: center;
-      padding: 0 20px;
-      margin: 0 auto 24px;
-    }
+  font-size: clamp(16px, 1.3vw, 18px);
+  line-height: 1.6;
+  color: #444;
+  text-align: center;
+  padding: 0 10px;
+  margin: 20px auto;
+  max-width: 800px; /* ← volta o limite confortável de leitura */
+}
 
-    @media screen and (min-width: 1024px) {
-      p.intro {
-        margin-bottom: 32px;
-        max-width: 900px;
-      }
-    }
+/* Ajuste específico para telas muito pequenas */
+@media screen and (max-width: 480px) {
+  p.intro {
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 0 16px;
+  }
+}
 
     /* ————— Formulário ————— */
     form {
