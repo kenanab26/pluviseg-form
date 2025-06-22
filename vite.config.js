@@ -1,7 +1,10 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+// vite.config.js
+import { defineConfig } from 'vite';
 
 export default defineConfig({
-  base: '/PluviSeg-IoT-Site/',
-  plugins: [react()],
-})
+  root: 'public', // <- agora o index.html está aqui
+  build: {
+    outDir: '../dist', // <- saída volta um nível acima
+    emptyOutDir: true,
+  },
+});
